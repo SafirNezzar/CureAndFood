@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
+class BaseController extends AbstractController
+{   
+    // Accueil
+    #[Route('', name: 'home_page')]
+    public function home(): Response
+    {
+        return $this->render('base/homePage.html.twig', [
+            
+        ]);
+    }
+
+    // A propos
+    
+}
