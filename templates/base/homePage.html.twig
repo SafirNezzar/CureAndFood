@@ -3,6 +3,13 @@
 {% block stylesheets %}
     {{parent()}}
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 {% endblock %}
 
 {% block title %}Accueil{% endblock %}
@@ -10,15 +17,137 @@
 {% block body %}
     <body id="container-body">
         <div id="containerBodyHome">
-            <div id="Cure&Food">
-                <h1>Accueil</h1>
+            <div id="CureandFood">
                 <div id="image-Cure&Food">
-                    <img src="{{asset('images/fond/cure_food2.png')}}" alt="image du site C&F" class="w-100">
+                    <!-- <img src="{{asset('images/fond/cure_food2.png')}}" alt="image du site C&F" class="w-100"> -->
+                    <div class="context">
+                        <h1>Bienvenue sur CureAndFood</h1>
+                    </div>
+                    <div class="area" >
+                        <ul class="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div >
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="container">
+                <h1>
+                <span>Nos recettes elfi</span>
+                <span>Manger sans regret !</span>
+                </h1>
+                <!-- Entrées -->
+                <h1>
+                    <span>Entrées</span>
+                </h1>
+                <div class="card-container-entré">
+                    <div class="card-wrapper">
+                        <div class="card">
+                        <div class="card-front-2">
+                            <p>Une Envie de salé ?</p>
+                            <p class="card-price">
+                            Délicieux Buns fourrés 
+                            </p>
+                            <i class="arrow-icon fas fa-arrow-right"></i>
+                        </div>
+                        <div class="card-back-2">
+                            <a href="#" class="btn">Pour plus de détails</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plats -->
+                <h1>
+                    <span>Plats</span>
+                </h1>
+                <div class="card-container-plats">
+                    <div class="card-wrapper">
+                        <div class="card">
+                        <div class="card-front-3">
+                            <p>Une Envie de salé ?</p>
+                            <p class="card-price">
+                            Raclette revisité façon butternut
+                            </p>
+                            <i class="arrow-icon fas fa-arrow-right"></i>
+                        </div>
+                        <div class="card-back-3">
+                            <a href="#" class="btn">Pour plus de détails</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                        <div class="card-front-4">
+                            <p>Une Envie de salé ?</p>
+                            <p class="card-price">
+                            Kofte épicés
+                            </p>
+                            <i class="arrow-icon fas fa-arrow-right"></i>
+                        </div>
+                        <div class="card-back-4">
+                            <a href="#" class="btn">Pour plus de détails</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                        <div class="card-front-5">
+                            <p>Une Envie de salé ?</p>
+                            <p class="card-price">
+                            Lentilles façon oriental
+                            </p>
+                            <i class="arrow-icon fas fa-arrow-right"></i>
+                        </div>
+                        <div class="card-back-5">
+                            <a href="#" class="btn">Pour plus de détails</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desserts/Gâteaux -->
+                <h1>
+                    <span>Desserts/Gâteaux</span>
+                </h1>
+                <div class="card-container-DG">
+                    <div class="card-wrapper">
+                        <div class="card">
+                        <div class="card-front-1">
+                            <p>Une envie de sucré ?</p>
+                            <p class="card-price">
+                            Délicieux cookies elfi
+                            </p>
+                            <i class="arrow-icon fas fa-arrow-right"></i>
+                        </div>
+                        <div class="card-back-1">
+                            <a href="#" class="btn">Pour plus de détails</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                        <div class="card-front-6">
+                            <p>Une envie de sucré ?</p>
+                            <p class="card-price">
+                            Délicieuse tarte au flan
+                            </p>
+                            <i class="arrow-icon fas fa-arrow-right"></i>
+                        </div>
+                        <div class="card-back-6">
+                            <a href="#" class="btn">Pour plus de détails</a>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
-    
-    
-
 {% endblock %}
